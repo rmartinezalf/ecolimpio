@@ -1,0 +1,2 @@
+class PlanPunto < ApplicationRecord
+end

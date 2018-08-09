@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nivel: MyString
+  detalle: MyString
+
+two:
+  nivel: MyString
+  detalle: MyString

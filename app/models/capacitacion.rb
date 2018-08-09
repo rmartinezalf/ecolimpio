@@ -1,0 +1,2 @@
+class Capacitacion < ApplicationRecord
+end
