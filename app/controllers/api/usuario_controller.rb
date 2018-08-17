@@ -4,6 +4,9 @@ class Api::UsuarioController < ApplicationController
       @usuario = Usuario.all
       render json: @usuario
     end 
+    def show
+      render json: @usuario
+    end
     def create
       @usuario = Usuario.new(usuario_params)
       if @usuario.save
@@ -18,6 +21,10 @@ class Api::UsuarioController < ApplicationController
       else
         render json: @usuario.errors, status: :unprocessable_entity
       end
+    end
+    def destroy
+      @usuario.destroy
+      head :no_content
     end
     private
       def set_usuario
